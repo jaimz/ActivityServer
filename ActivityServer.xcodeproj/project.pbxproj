@@ -9,18 +9,29 @@
 /* Begin PBXBuildFile section */
 		1A31C651140E679B006D9BAE /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A31C650140E679B006D9BAE /* main.c */; };
 		1A31C653140E679B006D9BAE /* ActivityServer.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1A31C652140E679B006D9BAE /* ActivityServer.1 */; };
+		1A57A4C6143253ED00B81491 /* http11_parser.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A57A4C5143253ED00B81491 /* http11_parser.c */; };
+		1A57A4CE1432583E00B81491 /* MxHttpRequest.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A57A4CD1432583E00B81491 /* MxHttpRequest.c */; };
+		1A57A4D1143259DE00B81491 /* MxIO.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A57A4D0143259DE00B81491 /* MxIO.c */; };
+		1A57A4D514325D6200B81491 /* MxHttpStatus.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A57A4D414325D6200B81491 /* MxHttpStatus.c */; };
+		1A57A4D71432606F00B81491 /* MxHttpResponse.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A57A4D61432606F00B81491 /* MxHttpResponse.c */; };
+		1A57A4DA143268F500B81491 /* MxHttpTransaction.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A57A4D9143268F500B81491 /* MxHttpTransaction.c */; };
+		1A57A4DD14326F8200B81491 /* MxHttpServer.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A57A4DC14326F8200B81491 /* MxHttpServer.c */; };
+		1A57A4E4143277CA00B81491 /* libcore_ds.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A57A4E3143277CA00B81491 /* libcore_ds.dylib */; };
+		1A57A4E61432797B00B81491 /* http11.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A57A4E51432797B00B81491 /* http11.c */; };
+		1A57A50714327EE000B81491 /* libcore_ds.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1A57A4E3143277CA00B81491 /* libcore_ds.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		1A31C64A140E679B006D9BAE /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 16;
 			files = (
+				1A57A50714327EE000B81491 /* libcore_ds.dylib in CopyFiles */,
 				1A31C653140E679B006D9BAE /* ActivityServer.1 in CopyFiles */,
 			);
-			runOnlyForDeploymentPostprocessing = 1;
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
@@ -28,6 +39,25 @@
 		1A31C64C140E679B006D9BAE /* ActivityServer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ActivityServer; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A31C650140E679B006D9BAE /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		1A31C652140E679B006D9BAE /* ActivityServer.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = ActivityServer.1; sourceTree = "<group>"; };
+		1A31C659140E67BA006D9BAE /* ext_help.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ext_help.h; sourceTree = "<group>"; };
+		1A31C65A140E67E3006D9BAE /* http11.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = http11.h; sourceTree = "<group>"; };
+		1A57A4C31432538B00B81491 /* http11_parser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = http11_parser.h; sourceTree = "<group>"; };
+		1A57A4C5143253ED00B81491 /* http11_parser.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = http11_parser.c; sourceTree = "<group>"; };
+		1A57A4C71432542C00B81491 /* http_limits.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = http_limits.h; sourceTree = "<group>"; };
+		1A57A4C8143254E700B81491 /* MxHttpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MxHttpRequest.h; sourceTree = "<group>"; };
+		1A57A4CD1432583E00B81491 /* MxHttpRequest.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = MxHttpRequest.c; sourceTree = "<group>"; };
+		1A57A4CF143258C200B81491 /* MxIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MxIO.h; sourceTree = "<group>"; };
+		1A57A4D0143259DE00B81491 /* MxIO.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = MxIO.c; sourceTree = "<group>"; };
+		1A57A4D214325CC100B81491 /* MxHttpResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MxHttpResponse.h; sourceTree = "<group>"; };
+		1A57A4D314325CFA00B81491 /* MxHttpStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MxHttpStatus.h; sourceTree = "<group>"; };
+		1A57A4D414325D6200B81491 /* MxHttpStatus.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = MxHttpStatus.c; sourceTree = "<group>"; };
+		1A57A4D61432606F00B81491 /* MxHttpResponse.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = MxHttpResponse.c; sourceTree = "<group>"; };
+		1A57A4D81432674E00B81491 /* MxHttpTransaction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MxHttpTransaction.h; sourceTree = "<group>"; };
+		1A57A4D9143268F500B81491 /* MxHttpTransaction.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = MxHttpTransaction.c; sourceTree = "<group>"; };
+		1A57A4DB14326E6400B81491 /* MxHttpServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MxHttpServer.h; sourceTree = "<group>"; };
+		1A57A4DC14326F8200B81491 /* MxHttpServer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = MxHttpServer.c; sourceTree = "<group>"; };
+		1A57A4E3143277CA00B81491 /* libcore_ds.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcore_ds.dylib; path = ActivityServer/libcore_ds.dylib; sourceTree = "<group>"; };
+		1A57A4E51432797B00B81491 /* http11.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = http11.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A57A4E4143277CA00B81491 /* libcore_ds.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +77,7 @@
 			children = (
 				1A31C64F140E679B006D9BAE /* ActivityServer */,
 				1A31C64D140E679B006D9BAE /* Products */,
+				1A57A4E3143277CA00B81491 /* libcore_ds.dylib */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +94,24 @@
 			children = (
 				1A31C650140E679B006D9BAE /* main.c */,
 				1A31C652140E679B006D9BAE /* ActivityServer.1 */,
+				1A31C659140E67BA006D9BAE /* ext_help.h */,
+				1A31C65A140E67E3006D9BAE /* http11.h */,
+				1A57A4E51432797B00B81491 /* http11.c */,
+				1A57A4C31432538B00B81491 /* http11_parser.h */,
+				1A57A4C5143253ED00B81491 /* http11_parser.c */,
+				1A57A4C71432542C00B81491 /* http_limits.h */,
+				1A57A4C8143254E700B81491 /* MxHttpRequest.h */,
+				1A57A4CD1432583E00B81491 /* MxHttpRequest.c */,
+				1A57A4CF143258C200B81491 /* MxIO.h */,
+				1A57A4D0143259DE00B81491 /* MxIO.c */,
+				1A57A4D214325CC100B81491 /* MxHttpResponse.h */,
+				1A57A4D61432606F00B81491 /* MxHttpResponse.c */,
+				1A57A4D81432674E00B81491 /* MxHttpTransaction.h */,
+				1A57A4D9143268F500B81491 /* MxHttpTransaction.c */,
+				1A57A4DB14326E6400B81491 /* MxHttpServer.h */,
+				1A57A4DC14326F8200B81491 /* MxHttpServer.c */,
+				1A57A4D314325CFA00B81491 /* MxHttpStatus.h */,
+				1A57A4D414325D6200B81491 /* MxHttpStatus.c */,
 			);
 			path = ActivityServer;
 			sourceTree = "<group>";
@@ -114,6 +164,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A31C651140E679B006D9BAE /* main.c in Sources */,
+				1A57A4C6143253ED00B81491 /* http11_parser.c in Sources */,
+				1A57A4CE1432583E00B81491 /* MxHttpRequest.c in Sources */,
+				1A57A4D1143259DE00B81491 /* MxIO.c in Sources */,
+				1A57A4D514325D6200B81491 /* MxHttpStatus.c in Sources */,
+				1A57A4D71432606F00B81491 /* MxHttpResponse.c in Sources */,
+				1A57A4DA143268F500B81491 /* MxHttpTransaction.c in Sources */,
+				1A57A4DD14326F8200B81491 /* MxHttpServer.c in Sources */,
+				1A57A4E61432797B00B81491 /* http11.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,7 +193,7 @@
 					"$(inherited)",
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_VERSION = "";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -155,7 +213,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_VERSION = "";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -168,14 +226,27 @@
 		1A31C657140E679B006D9BAE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/ActivityServer\"",
+				);
+				"LIBRARY_SEARCH_PATHS[arch=*]" = /Users/james/Projects/OSX/ActivityServer/ActivityServer;
+				"OTHER_LDFLAGS[arch=*]" = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = /Users/james/Projects/OSX/core_ds;
+				"USER_HEADER_SEARCH_PATHS[arch=*]" = "";
 			};
 			name = Debug;
 		};
 		1A31C658140E679B006D9BAE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/ActivityServer\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = /Users/james/Projects/OSX/core_ds;
 			};
 			name = Release;
 		};
@@ -198,6 +269,7 @@
 				1A31C658140E679B006D9BAE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
